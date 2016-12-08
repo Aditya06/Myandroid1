@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.4.0_3dd1f6f3c3ad1841f258a3ccc2cb3991a3313457\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_23c60fea8ef030b14218a1c8dc630ae459856024\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_48ced1e9cc4339760204efae2f527fb7c1615546\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7cb21610fdda97c82dc79ab2683894fe796582e3">
+        <dex dex="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_b5bd1b3576f518d88e57f7f37b03daf8b4367ba6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HP PAVILION\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_d191c923a21a4b0eae852b821048b3b24a716dd8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_78b815f8cdc3bcb54a76c7942348987a41da63ff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HP PAVILION\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.7_4d14940faa03560a8da494aa259aed7674884ec5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_2d8c39f7cacd9591a95e1ec6508746fddf2ed63c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HP PAVILION\android-sdks\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_3d1c7e296602f7b80162ab94daf0754cd5335378\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ab97e2591b242328950064eef2ad44ac823a5c2a">
+        <dex dex="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_12a7f5994e2d623f6432ab7fcf1cc8be7492a01e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.4.0_42d1218ce15cdf05edaca9b2368f516468c6c83d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.4.0_e45ae45e1df69872c6467f0f7b7f3dc039debc66\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\HP PAVILION\AndroidStudioProjects\ChatClientHTTP\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_cd0bb7b94647faa432605467d60ffd29387799ad\classes.dex" />
+    </item>
+
+</items>
