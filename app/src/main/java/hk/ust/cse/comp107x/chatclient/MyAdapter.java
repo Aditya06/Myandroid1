@@ -10,9 +10,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by muppala on 8/6/16.
- */
 
 public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private final Context context;
@@ -21,9 +18,6 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private static final int VIEW_HOLDER_TYPE_1=1;
     private static final int VIEW_HOLDER_TYPE_2=2;
 
-    // Provide a reference to the views for each data item
-    // Complex data items may need more than one view per item, and
-    // you provide access to all the views for a data item in a view holder
     public static class ViewHolder_Type1 extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
         public TextView mymessageTextView, mytimeTextView;
