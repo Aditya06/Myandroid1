@@ -63,9 +63,7 @@ public class Contacts extends AppCompatActivity implements AdapterView.OnItemCli
 
         mArrayAdapter = new ContactArrayAdapter(this, friendInfoList);
 
-        // If you are using a ListView widget, then your activity should implement
-        // the onItemClickListener. Then you should set the OnItemClickListener for
-        // teh ListView.
+
         friendView = (ListView) findViewById(R.id.friendListView);
         friendView.setOnItemClickListener(this);
 
@@ -82,10 +80,8 @@ public class Contacts extends AppCompatActivity implements AdapterView.OnItemCli
         });
 
 
-        // Start the AsyncTask to process the Json string in the background and then initialize the listview
 
         if (isOnline()) {
-            // Start the AsyncTask to process the Json string in the background and then initialize the listview
             FriendsProcessor mytask = new FriendsProcessor();
             mytask.execute(Constants.JSON_URL);
         }
@@ -95,10 +91,8 @@ public class Contacts extends AppCompatActivity implements AdapterView.OnItemCli
         }
     }
 
-    // This method checks to see if the device is online. Returns true if online, else false
     private boolean isOnline() {
 
-        // Connectivity manager gives you access to the current state of the connection
         ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
 
@@ -120,10 +114,6 @@ public class Contacts extends AppCompatActivity implements AdapterView.OnItemCli
 
     }
 
-    // This AsyncTask processes the Json string by reading it from a file in the assets folder and
-    // then converts the string into a list of FriendInfo objects. You will also see the use of
-    // a progress dialog to show that work is being processed in the background.
-
     private class FriendsProcessor extends AsyncTask<String, Void, Integer> {
 
         ProgressDialog progressDialog;
@@ -132,8 +122,7 @@ public class Contacts extends AppCompatActivity implements AdapterView.OnItemCli
             super();
         }
 
-        // The onPreExecute is executed on the main UI thread before background processing is
-        // started. In this method, we start the progressdialog.
+     
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -142,8 +131,7 @@ public class Contacts extends AppCompatActivity implements AdapterView.OnItemCli
             progressDialog = ProgressDialog.show(mContext, "Wait!","Downloading Friends List");
         }
 
-        // This method is executed in the background and will return a result to onPostExecute
-        // method. It receives the file name as input parameter.
+
         @Override
         protected Integer doInBackground(String... urls) {
 
@@ -151,8 +139,6 @@ public class Contacts extends AppCompatActivity implements AdapterView.OnItemCli
             HttpURLConnection urlConnection = null;
             Integer result = 0;
 
-            // Now we read the file, line by line and construct the
-            // Json string from the information read in.
             try {
             // TODO connect to server, download and process the JSON string
                 URL url=new URL(urls[0]);
@@ -178,8 +164,6 @@ public class Contacts extends AppCompatActivity implements AdapterView.OnItemCli
             return result; //"Failed to fetch data!";
         }
 
-        // This method will be executed on the main UI thread and can access the UI and update
-        // the listview. We dismiss the progress dialog after updating the listview.
         @Override
         protected void onPostExecute(Integer result) {
             super.onPostExecute(result);
@@ -190,7 +174,6 @@ public class Contacts extends AppCompatActivity implements AdapterView.OnItemCli
             progressDialog.dismiss();
         }
 
-        // This method is called if we cancel the background processing
         @Override
         protected void onCancelled() {
             super.onCancelled();
@@ -199,8 +182,7 @@ public class Contacts extends AppCompatActivity implements AdapterView.OnItemCli
         }
     }
 
-    // This method converts an input stream into a string. It reads in the input line by line
-    // and then converts it into a string.
+   
     private String convertInputStreamToString(InputStream inputStream) throws IOException {
         BufferedReader bufferedReader = new BufferedReader( new InputStreamReader(inputStream));
         String line = "";
@@ -216,19 +198,13 @@ public class Contacts extends AppCompatActivity implements AdapterView.OnItemCli
         return result;
     }
 
-    // This class processes the Json string and converts it into a list of FriendInfo objects
-    // We make use of the Gson library to do this automatically
     private void processFriendInfo(String infoString) {
 
-        // Create a new Gson object
-        // TODO Create a Gson Object
+       
         GsonBuilder gsonBuilder = new GsonBuilder();
         Gson gson = gsonBuilder.create();
 
-        // Use the Gson library to automatically process the string and convert it into
-        // the list of FriendInfo objects. The use of the library saves you the need for
-        // writing your own code to process the Json string
-        // TODO convert the string to a list of FriendInfo objects using Gson
+       
         friendInfoList = new ArrayList<FriendInfo>();
         friendInfoList = Arrays.asList(gson.fromJson(infoString, FriendInfo[].class));
     }
