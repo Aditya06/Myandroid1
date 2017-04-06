@@ -20,8 +20,7 @@ public class ChatClient extends AppCompatActivity implements View.OnClickListene
     ImageButton sendButton;
     EditText messageText;
     RecyclerView messageList;
-    // ArrayAdapter <String> mAdapter = null;
-    // ArrayList<String> messages = null;
+
     RecyclerView.Adapter mAdapter = null;
     ArrayList<Message> messages = null;
     int in_index = 0;
@@ -36,23 +35,12 @@ public class ChatClient extends AppCompatActivity implements View.OnClickListene
 
         messageText = (EditText) findViewById(R.id.messageText);
 
-        // Create a new ArrayList of Message objects
         messages = new ArrayList<Message>();
-
-        // Create a new custom ArrayAdapter. This custom Adapter is
-        // implemented by us, and illustrates how an ArrayAdapter is
-        // constructed given the data (from the Message objects)
         mAdapter = new MyAdapter(this, messages);
 
-        // TODO RECYCLER VIEW
-
-        // get the friend's name from the Intent
         Intent in = getIntent();
         String friendName = in.getStringExtra(getString(R.string.friend));
 
-        // Set the toolbar title to friend's name. This is a little quirk
-        // that once you set the toolbar to be an ActionBar, you have to
-        // use this approach to set the title
         getSupportActionBar().setTitle(getResources().getString(R.string.app_name) + ": " + friendName);
 
         messageList = (RecyclerView) findViewById(R.id.messageList);
@@ -72,17 +60,12 @@ public class ChatClient extends AppCompatActivity implements View.OnClickListene
 
                 String messString = messageText.getText().toString();
 
-                // If the message is not empty string
                 if (!messString.equals("")) {
 
-                    // Create a new Message object and initialize it with the information
                     Message message = new Message("", messString, true, new Date());
 
-                    // Add the Message object to the ArrayList
                     messages.add(message);
 
-                    // Notify the adapter that the data has changed due to the addition
-                    // of a new message object. This triggers an update of the ListView
                     mAdapter.notifyDataSetChanged();
                     sendMessage();
                     message = null;
